@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>FaleConosco</title>
+	<style type="text/css">
+		body{
+			background-color: #27ad2db3;
+		}
+
+		img{
+			position: fixed;
+			height: 500px;
+			width: 500px;
+			margin-left: 9%;
+			margin-top: 5%;
+		}
+		
+		.texto{
+
+			font-family: sans-serif;
+			font-size: 15px;
+			float: right;
+			padding-top: 9%;
+			padding-right: 15%;
+		}
+
+		a{
+			text-decoration: none;
+		}
+
+
+		.um, .dois, .tres{
+			height: 45px;
+			width: 300px;
+			border-radius: 5px;
+			border: 1px solid darkgray;
+			background-color: white; 
+
+			font-size: 15px;
+			font-family: sans-serif;
+
+		}
+
+		.BtVoltar, .BtEnviar{
+
+			border: 1px solid darkgray;
+			height: 40px;
+			width: 120px;
+			border-radius: 5px;
+			background-color: #007bff;/* cor azul para os botões #007bff; */
+			margin-bottom: 10px;
+			margin-top: 20px;
+			margin-right: 20px;
+			text-align: center;
+			font-family: sans-serif;
+			font-size: 15px;
+			color: white;
+			cursor: pointer;
+		}
+
+	</style>
+
+</head>
+
+<body>
+	<img src="./img/logo.png">
+
+	<div class="texto">
+		
+	<form method="get" action="_php">
+
+		<legend>Nome completo</legend>
+		<input class="um" type="text" name="text" placeholder="Nome" required="required" minlength="4" >
+
+		<br>
+		<br>
+
+		<legend>Email</legend>
+		<input class="dois" type="email" name="email" placeholder="Email" required="required" minlength="2">
+
+		<br>
+		<br>
+
+		<legend>Telefone</legend>
+		<input class="tres" type="text" name="text" placeholder="Numero" minlength="9" minlength="9">
+
+		<br>
+		<br>
+
+		<legend>Deixe sua mensagem</legend>
+		<textarea rows="5" cols="40" maxlength="1000" placeholder="Digite sua mensagem" style="font-family: sans-serif;"></textarea>
+
+		<br>
+		<br>
+
+		 <a href="Index.html" target="_Self" id="Voltar">
+            <input class="BtVoltar" type="action" value="Voltar" id="Voltar">
+          </a>
+            <button class="BtEnviar" type="submit"  style="float: right;">Enviar</button>
+            <p style="margin-left: 0px;">© 2019 - 2022 PCS Todos os Direitos Reservados.</p>
+	</form>
+
+	</div>
+
+</body>
+
+</html>

@@ -1,0 +1,49 @@
+ <!DOCTYPE html>
+ <html>
+ <head>
+ 	<link rel="stylesheet" type="text/css" href="./css/CriandoConta.css">
+ 	<title>Criandoconta</title>
+ </head>
+ <body>
+ <main>
+ 	<img src="img/logo.png">
+ 	<form action="action" method="post"> <!-- pra nao salvar oq o usuario colocar-->
+ 		<!--Nome e sobre nome -->
+    <br>
+ 		<div> <!--div para deixar mais organizado e facil na hora de criar class-->
+ 			<!-- aqui primeiro nome -->
+ 			<legend>Nome</legend>
+ 			<input class="LogNome" type="text" id="Nome" name="Nome" placeholder="Nome Completo" required="required" minlength="2" title="Inserir primeiro nome.">
+ 		</div>
+ 		<br>
+ 			<div>
+ 				<!-- aqui primeira senha e confirmação dela -->
+          <legend>Senha</legend>
+        		<input class="PinName" type="password" placeholder="Senha" id="password" required title="Inserir senha">
+ 			</div>
+ 		<br>
+ 				<div>
+ 					<!-- caixa de texto e label para email -->
+ 					<legend>E-mail</legend>
+ 					<input class="EmailBox" type="email" id="email" name="email" placeholder="@gmail.com" required="required" minlength="2" title="Inserir email">
+ 				</div>
+
+ 				<br>
+ 				<!-- checkbox para politica de privacidade -->
+ 				<input type="checkbox" name="checkbox" required="required">Concorda com nossa política de <a style="font-style: none; color: blue;" href="./PoliticaDePrivacidade/contrato-politica-privacidade.pdf">privacidade</a>?
+    <br>     
+            <a href="Index.html" target="_Self" id="Voltar">
+            <input class="BtVoltar" type="action" value="Voltar" id="Voltar" style="text-align: center;">
+          </a>
+            <button class="BtEnviar" type="submit"  style="float: right;">Cadastrar</button>
+
+
+
+ 	</form>
+ 	<br>
+
+
+</main>
+<p style="margin-left: 25px;">© 2019 - 2022 PCS Todos os Direitos Reservados.</p>
+ </body>
+ </html>

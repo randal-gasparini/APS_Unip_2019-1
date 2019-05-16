@@ -1,0 +1,115 @@
+.conteudo{
+	display: grid;
+	grid-template-columns: 3fr 30px 3fr;
+	grid-template-rows: 50px 230px 30px 230px 50px;
+	grid-template-areas: 
+	"Title Title Title"
+	"Recente1 vspaces Recente2"
+	"hspace hspace hspace"
+	"Recente3 vspacei Recente4"
+	"Pag Pag Pag"
+}
+
+.conteudo h1{
+	grid-area: Title;
+	margin: 0;
+}
+
+.pags{
+	grid-area: Pag;
+	line-height: 50px;
+	padding-left: 10px;
+}
+
+.Recente1{
+	display: grid;
+	grid-template-columns: 3fr 2fr;
+	grid-template-rows: 30% 60% 10%;
+	grid-template-areas: 
+	"Title Img"
+	"Desc Img"
+	"Cont Img";
+	background-color: white;
+	border-radius: 5px;
+	box-shadow: 2px 2px 5px , -2px 2px 5px, -2px -2px 5px, 2px -2px 5px;
+	width: 100%;
+	height: 100%;
+	grid-area: Recente1;
+
+}
+
+.Recente2{
+	display: grid;
+	grid-template-columns: 3fr 2fr;
+	grid-template-rows: 30% 60% 10%;
+	grid-template-areas: 
+	"Title Img"
+	"Desc Img"
+	"Cont Img";
+	background-color: white;
+	border-radius: 5px;
+	box-shadow: 2px 2px 5px , -2px 2px 5px, -2px -2px 5px, 2px -2px 5px;
+	width: 100%;
+	height: 100%;
+	grid-area: Recente2;
+
+}
+
+.Recente3{
+	display: grid;
+	grid-template-columns: 3fr 2fr;
+	grid-template-rows: 30% 60% 10%;
+	grid-template-areas: 
+	"Title Img"
+	"Desc Img"
+	"Cont Img";
+	background-color: white;
+	border-radius: 5px;
+	box-shadow: 2px 2px 5px , -2px 2px 5px, -2px -2px 5px, 2px -2px 5px;
+	width: 100%;
+	height: 100%;
+	grid-area: Recente3;
+
+}
+
+.Recente4{
+	display: grid;
+	grid-template-columns: 3fr 2fr;
+	grid-template-rows: 30% 60% 10%;
+	grid-template-areas: 
+	"Title Img"
+	"Desc Img"
+	"Cont Img";
+	background-color: white;
+	border-radius: 5px;
+	box-shadow: 2px 2px 5px , -2px 2px 5px, -2px -2px 5px, 2px -2px 5px;
+	width: 100%;
+	height: 100%;
+	grid-area: Recente4;
+
+}
+
+.Recente1 h1 , .Recente2 h1 , .Recente3 h1 , .Recente4 h1{
+	padding-top: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+	font-size: 1em;
+}
+
+.Recente1 img , .Recente2 img , .Recente3 img , .Recente4 img {
+	height: 100%;
+	width: 100%;
+	border-radius: 5px;
+	grid-area: Img;
+	overflow: hidden;
+}
+
+.Recente1 p , .Recente2 p , .Recente3 p , .Recente4 p{
+	padding: 10px;
+	margin-top: 0;
+}
+
+.Recente1 a , .Recente2 a , .Recente3 a , .Recente4 a{
+	padding-left: 10px;
+	margin-top: 0;
+}

@@ -1,0 +1,203 @@
+html,body{
+	height: 100%;
+	margin: 0;
+	overflow: auto; /* para acrescentar um scroll a pagina*/
+	scroll-behavior: smooth;
+}
+
+body{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	background-image: url(../img/SunsetFundoDois.jpg);
+	background-position: center;
+	position: relative;
+	background-repeat: no-repeat;/*para nao mexer o fundo mais a tag position fixed em cima para mover so o conteudo do centro da tela*/
+}
+
+
+
+
+
+.geral{  /* Refere-se a todo o conteúdo do site exceto o rodapé */
+	background-color: #none;
+	text-align: justify;
+	min-height: 100%;
+	min-width: 800px;
+	width: 70%;
+	margin: 0 auto;
+	margin-bottom: 300px;
+	color: black;
+}
+
+
+
+
+
+.menu-principal{ /* Espaço do Fundo verde no topo da página */
+	text-align: right;
+	color: white;
+	position: absolute;
+	z-index: -10000;
+	left: 0;
+	top: 0;
+	width: 100%;
+	min-width: 800px;
+	background-color: #27ad2db3;
+	height: 200px;
+}
+
+.menu-principal img{
+	position: absolute;
+	left: 15%;
+	top: 15px;
+	height: 147px;
+}
+
+.menu-principal p{
+	position: absolute;
+	right: 15%;
+	top: 15px;
+	height: 100px;
+	}
+
+@media (max-width: 800px){
+	.container-login{
+		display: none;
+	}
+}
+.container-login{  /* Quadrado branco do login */
+	background-color: none;
+	height: 120px;
+	width: 200px;
+	position: absolute;
+	right: 15%;
+	top: 30px;
+	border-radius: 10px;
+	color: black;
+}
+
+.container-login div{
+	padding-top: 0.75em;
+}
+
+#Cadastre-se{  /* botão cadastre-se*/
+	position: absolute;
+	bottom: 0.85em;
+	right: 1em;
+	font-size: 0.6em;
+	background: none;
+	border: 0;
+	padding: 0;
+	margin: 0;
+}
+
+.container-login input{ /* tamanho das caixas de texto */
+	width: 100%;
+	border:0;
+	border-radius: 5px;
+}
+
+.container-login button{
+	cursor: pointer;
+}
+
+.container-login a{
+	position: absolute;
+	bottom: 0.375em;
+	right: 0;
+	font-size: 1em;
+	text-decoration: none;
+}
+
+#btnlogin{
+	text-align: center;
+	position: absolute;
+	height: 30px;
+	width: 50px;
+	left: 0;
+	bottom: 0;
+	border: 0;
+	border-radius: 5px;
+	background-color: #f6f7f9;
+	color: black;
+}
+
+
+.menu {
+	text-align: center;
+	margin-top: 177px;
+}
+
+
+.menu ul{
+	margin-left: -40px;
+	width: 100%;
+	display: table;
+}
+
+.menu ul li{
+	background-color: black;
+    display: table-cell;
+    color: #283037;    
+    height: 40px;
+    line-height: 40px;
+	border-color: black;
+	border-bottom: 3px solid black;
+	border-top: 3px solid black;
+}
+
+.menu ul li:hover{
+    border-bottom: 3px solid white;
+}
+
+.menu ul li a:hover{
+    color: white;
+    
+}
+
+.menu ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+#aberta{	/* Página atualmente aberta */
+	border-top: 3px solid #27ad2d;
+	border-bottom: 3px solid #27ad2d;
+	background-color: #27ad2d;
+	list-style-image: none;
+}
+
+.conteudo{	/* Isso é pra deixar a "tela branca" atrás do texto...não inclui o menu*/
+	background-color: #fffcfc;
+	border-radius: 7px;
+	padding-right: 70px;
+	padding-left: 70px;
+	padding-top: 70px;
+	padding-bottom: 70px;
+}
+
+.rodape{
+	float: left;
+	padding-top: 50px;
+	align-items: center;
+	bottom: 0px;
+	padding-left: 300px;
+}
+
+.rodape p{
+	color: white;
+}
+
+.bk2top{
+	font-family: sans-serif;
+	font-size: 15px;
+}
+
+.bk2top a{
+
+ 		text-decoration: none;
+ 		color: blue;
+}
