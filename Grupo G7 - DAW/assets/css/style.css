@@ -1,0 +1,280 @@
+/* Utilizei o body para remover as margens padrões de todos objetos */
+body {
+    margin: 0;
+    font-family: arial;
+    font-size: 16px;
+    background-color: #f1f1f1;
+    display: flex;
+    flex-direction: column;
+}
+h1{
+    text-align: center;
+}
+/* Iframe utilizado para abrir o vídeo na página principal (Meio ambiente) */
+iframe{
+    margin: 0px 64px;
+}
+/* Abaixo utilizei a class topo para criar a primeira barra superior */ 
+.topo {
+    width: auto;
+    height: 30px;
+    background-color: #28a368;
+    color: #fff;
+    border-bottom: 1px solid #FFF;
+}
+/* Topoint foi onde eu defini a largura máxima do conteúdo dentro da div */
+.topoint{
+    width: 100%;
+    max-width: 1000px;
+    height: 30px;
+    margin: auto;
+}
+.topoesquerdo{
+    width: 50%;
+    height: 30px;
+    float: left;
+}
+.topodireito{
+    width: 50%;
+    height: 28px;
+    float: right;
+    margin-top: 2px;
+}
+.topodireito li a{
+    text-decoration: none;
+    color:#FFF;
+}
+.topodireito a{
+    float: left;
+}
+.topodireito img{
+    margin-right: 3px;
+}
+/* Topo2 foi onde utilizei para criar a segunda barra superior que contém o logo e a frase de efeito */
+.topo2 {
+    width: auto;
+    height: 120px;
+    background-color: #f1f1f1;
+    color: #000;
+}
+/* topo2int foi onde utilizei para adicionar uma largura máxima para o conteúdo dentro da div */
+.topo2int{
+    width: 100%;
+    max-width: 1000px;
+    height: 120px;
+    margin: auto;
+}
+.logo{
+    width: 230px;
+    height: 90px;
+    float: left;
+    margin: 10px 0px;
+}
+.topo2 .banner{
+    width: 731px;
+    height: 90px;
+    float: right;
+    margin: 10px 10px;
+}
+.menu{
+    height: 40px;
+    background-color: #28a368;
+    margin-bottom: 12px;
+    border-top: 1px solid #FFF;
+    border-bottom: 1px solid #FFF;
+    box-shadow: 0px 0px 3px #FFF;
+}
+.menuint{
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    height: 40px;
+}
+.menu ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.menu li{
+    float:left;
+    line-height: 36px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 18px;
+    margin: 2px 0px;
+}
+.menu a{
+    color: #fff;
+    text-decoration: none; 
+}
+.menuint li:hover{
+    background-color: #1acb64;
+    border-radius: 10px;
+    transition-duration: 1s;
+}
+.menuint li a:hover{
+    color: #006400;
+    text-shadow: 1px 1px 5px #fff;
+    transition-duration: 1s;
+}
+.containerint{
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    background-color: #f1f1f1;
+    height: 1000px;
+}
+.ladodireito{
+    width: 300px;
+    min-height: 200px;
+    background-color: #FFF;
+    float: right;
+    color: black;
+    margin-left: 12;
+    border: 1px solid #28a368;
+    box-shadow: 0px 0px 5px #000;
+}
+.widget{
+    background-color: #FFF;
+}
+.widget_title{
+    height: 30px;
+    border-bottom: 1px solid #28a368;
+    background-color: #f1f1f1;
+    line-height: 30px;
+    padding-left: 12px;
+    font-size: 18px;
+    
+}
+.widget_content{
+    text-align: center;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+.noticia_item{
+    font-size: 14px;
+    margin: 0px 10px;
+    padding: 10px 0px;
+    text-align: left;
+    border-bottom: 1px solid #28a368; 
+}
+.noticia_item a{
+    text-decoration: none;
+    color: #000;
+    text-align: left;
+}
+.noticia_item a:hover{
+    color: deepskyblue;
+}
+.noticia_item a:visited{
+    background-color: darkblue;
+}
+.ladoesquerdo{
+    width: 688px;
+    min-height: 200px;
+    background-color: #FFF;
+    float: left;
+    color: black;
+    border: 1px solid #28a368;
+    box-shadow: 0px 0px 8px #000;
+}
+.content_item h1, h2, h3, h4, h5, h6{
+    text-align: center; 
+}
+.content_item p{
+    padding: 0px 10px;
+    text-align: justify
+    
+}
+.content_item img{
+    width: 680px;
+    margin: auto;
+    text-align: center;
+    align-content: center;
+    margin-left: 4px;
+    box-shadow: 0px 0px 3px #000;
+
+}
+.ladoesquerdo .paginasobre .content_item img{
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    margin-left: 240px;
+}
+.paginasobre h1, h2, h3, h4{
+    text-align: center;
+}
+.ladoesquerdo .paginasobre .content_item p {
+    text-align: center;
+}
+form {    
+    margin: 0 auto;
+    width: 400px;
+    padding: 1em;
+    border: 1px solid #CCC;
+    border-radius: 1em;
+    margin-bottom: 100px;
+}
+form div + div {
+    margin-top: 1em;
+}
+.indice ul li{
+    list-style-type: disc;
+}
+.subirtopo {
+    bottom: 30px;
+    right: 30px;
+    cursor: pointer;
+    padding: 15px;
+    font-size: 15px;
+    position: fixed;
+    border: 0;
+}
+.footer{
+    width: 100%;
+    height: 150px;
+    background-color: #28a368;
+    float: left;
+    margin-top: 50px;
+}
+.footerint{
+    width: 100%;
+    max-width: 1000px;
+    height: 150px;
+    margin: auto;
+}
+.f_esq{
+    width: 200px;
+    height: 100px;
+    border-radius: 15px;
+    margin-top: 25px;
+    background-color: #FFF;
+    vertical-align: middle;
+    float: left;
+    opacity: 15%;
+
+}
+.f_esq img{
+    margin: 8px;
+}
+
+
+.f_dir{
+    width: 60%;
+    height: 100px;
+    float: right;
+    margin-top: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
