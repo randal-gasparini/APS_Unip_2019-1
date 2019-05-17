@@ -1,0 +1,73 @@
+/* CSS Document */
+#menu{
+    text-align: center;
+}
+
+#menu ul {
+    padding:0px;
+    margin:0px;
+    background-color: #009;
+    list-style:none;
+}
+#menu ul li { 
+	display: inline; 
+}
+#menu ul li a {
+    padding: 16px;
+    display: inline-block;
+
+    /* visual do link */
+    background-color:#009;
+    color: #FFF;
+    text-decoration: none;
+}
+#menu ul li a:hover {
+    background-color: #09F;
+    color: #FFF;
+}
+.fonteTexto{
+	background-color: #009;
+	color: #fff;
+	text-align:center;
+}
+IMG.displayed {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#firsth1{
+    margin-top: 5vh;
+}
+
+#formDiv{
+    padding-top: 1em;
+    background-color: #009;
+    color: #FFF;
+}
+form {
+    margin: 0 auto;
+    width: 400px;
+    padding: 1em;
+    border: 1px solid #CCC;
+    border-radius: 1em;
+}
+
+form div + div {
+    margin-top: 1em;
+}
+
+
+input, textarea {
+    
+    font: 1em sans-serif;
+    border: 1px solid #999;
+}
+
+textarea {
+    vertical-align: top;
+
+    height: 5em;
+
+    resize: vertical;
+}
