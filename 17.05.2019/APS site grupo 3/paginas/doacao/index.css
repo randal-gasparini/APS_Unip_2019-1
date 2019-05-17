@@ -1,0 +1,80 @@
+.Nome {
+font-family: arial;
+font-size: 15px;
+font-weight:700;
+}
+
+.Email{
+font-family: arial;
+font-size: 15px;
+font-weight: 700;
+
+}
+
+.Cpf {
+font-family: arial;
+font-size: 15px;
+font-weight: 700;
+
+}
+
+.Valor {
+  font-family: arial;
+font-size: 15px;
+font-weight: 700;
+
+}
+
+.Comprovante {
+font-family: arial;
+font-size: 15px;
+font-weight: 700;
+
+}
+
+.Ajude {
+font-family: arial;
+font-size: 15px;
+width: 300px;
+
+}
+th, td {
+  text-align: left;
+  padding: 8px;
+  border: 1px solid #ccc;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid #ddd;
+}
+
+input, label {
+  display:block;
+}
+
+input {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 3px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+button {
+	background-color: green;
+	color: white;
+	border: none;
+	font-size: 16px;
+	display: inline-block;
+	text-decoration: none;
+	cursor: pointer;
+	padding-top: 10px;
+	padding-bottom: 10px ;
+	padding-left: 15px;
+	padding-right: 15px;
+	border-radius: 4px;
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
