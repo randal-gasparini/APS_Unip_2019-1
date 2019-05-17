@@ -1,0 +1,312 @@
+body {
+  font-family: "Tahoma", sans-serif;
+}
+
+p, h1, h2, h3, h4, h5, h6, label, span {
+  color: #000000;
+}
+
+p {
+  text-align: justify;
+}
+
+a:visited, a:link, a:active {
+  color: #000000;
+}
+
+/* Font Config Inicio */
+
+@media screen and (max-width: 480px) {
+  html p { font-size: 18px; }
+}
+
+/* Font Config Fim */
+
+/* SideMenu Inicio */
+
+.sidenav {
+  height: 100%;
+  width: 0px;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  right: 0;
+  background-color: #bfbfbf;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 85px;
+}
+
+.nav {
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  background-color: #bfbfbf;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: black;
+  display: block;
+  transition: 0s;
+}
+
+.nav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #000000;
+  display: block;
+  transition: 0s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.nav a:hover {
+  color: #f1f1f1;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav a {font-size: 18px;}
+  .nav a {font-size: 18px;}
+}
+
+@media screen and (max-width: 767px) {
+  .nav {width: 0px;}
+}
+
+@media screen and (min-width: 768px) {
+  .sidenav {width: 0;}
+}
+
+/* SideMenu Fim */
+
+/* Menu Inicio */
+
+#divMenu {
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 30px;
+   background-color: #E6E7E8;
+   vertical-align: center;
+   padding: 20px;
+   position: fixed;
+   overflow-y: hidden;
+   z-index: 2;
+   box-shadow: 250px 5px 10px 1px rgba(0,0,0,0.6);
+}
+
+/* Animação Menu */
+
+@media screen and (max-width: 767px) {
+  #divMenu {z-index: 2; box-shadow: 0 5px 10px 1px rgba(0,0,0,0.6); transition-duration: 0.4s;}
+}
+
+@media screen and (min-width: 768px) {
+  #divMenu {transition-duration: 0.4s; height: 40px;}
+  #divLogoMenu {margin-top: 7px; transition: 0.5}
+}
+
+/**/
+
+#divLogoMenu {
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 30px;
+   background-color: #E6E7E8;
+   vertical-align: center;
+   padding: 20px;
+   position: fixed;
+   overflow-y: hidden;
+   z-index: 2;
+}
+
+#divOpnMenu {
+   top: 0;
+   right: 0;
+   width: auto;
+   height: 30px;
+   background-color: #E6E7E8;
+   vertical-align: center;
+   padding: 20px;
+   position: fixed;
+   overflow-y: hidden;
+   z-index: 2;
+}
+
+/* BtnMenu Animação Opacidade*/
+
+@media screen and (min-width: 768px) {
+  #divOpnMenu {z-index: 1; opacity: 0; transition-duration: 1s;}
+}
+
+@media screen and (max-width: 767px) {
+  #divOpnMenu {transition-duration: 1s;}
+}
+
+/* BtnMenu Animação Transformação */
+
+.container {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.barra1, .barra2, .barra3 {
+  width: 35px;
+  height: 5px;
+  background-color: #000000;
+  margin: 6px 0;
+  transition: 0.4s;
+  border-radius: 3px;
+}
+
+.mudar .barra1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.mudar .barra2 {
+  opacity: 0;
+}
+
+.mudar .barra3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+
+/**/
+
+/* Menu Fim */
+
+/* Footer Inicio */
+
+#footer {
+   bottom: 0;
+   left: 0;
+   width: 100%;
+   height: 10px;
+   background-color: #E6E7E8;
+   vertical-align: center;
+   padding: 20px;
+   overflow-y: hidden;
+   z-index: 3;
+   position: fixed;
+   box-shadow: 250px 5px 5px 5px rgba(0,0,0,0.6);
+}
+
+#footer span {
+   vertical-align: center;
+}
+
+/* Animação footer */
+
+@media screen and (max-width: 767px) {
+  #footer {z-index: 2; box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.6); transition-duration: 0.4s;}
+}
+
+@media screen and (min-width: 766px) {
+  #footer {transition-duration: 0.4s;}
+}
+
+/**/
+
+/* Footer Fim */
+
+/* Main Inicio */
+
+#main {
+  height: 500px;
+  margin-top: 50px;
+  padding: 20px;
+  z-index: -1;
+  background-color: #ffffff;
+}
+
+/* Animação #main */
+
+@media screen and (min-width: 768px) {
+   #main {margin-left: 250px; transition: 1s;}
+}
+
+@media screen and (max-width: 767px) {
+   #main {transition: 1s;}
+}
+
+/**/
+
+/*Titulo e Subtitulo Def*/
+.titulo {
+  font-size: 40px;
+  color: #000000;
+}
+
+.subtitulo {
+  font-size: 20px;
+  color: gray;
+}
+
+/*Animação Titulo e Subtiulo*/
+
+@media screen and (min-width: 768px){
+  .titulo {font-size: 50px; transition: 0.4s;}
+  .subtitulo {font-size: 25px; transition: 0.4s;}
+}
+
+@media screen and (max-width: 767px){
+  .titulo {font-size: 40px; transition: 0.4s;}
+  .subtitulo {font-size: 20px; transition: 0.4s;}
+}
+
+/**/
+
+.texto {
+  font-size: 20px;
+}
+
+/*Animacao da classe texto*/
+
+@media screen and (min-width: 768px){
+  .texto {font-size: 15px; transition: 0.4s;}
+}
+
+@media screen and (max-width: 767px){
+  .texto {font-size: 20px; transition: 0.4s;}
+}
+
+/**/
+
+.link {
+  font-size: 22px;
+}
+
+/*Animacao da classe link*/
+
+@media screen and (min-width: 768px){
+  .link {font-size: 17px; transition: 0.4s;}
+}
+
+@media screen and (max-width: 767px){
+  .link {font-size: 22px; transition: 0.4s;}
+}
+
+/**/
+
+/* Main Fim */
+
+
+
+
+
+

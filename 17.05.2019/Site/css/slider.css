@@ -1,0 +1,131 @@
+/* Imagem Def */
+
+#imagem {
+ 	 width: 100%;
+  	background-color: black;
+  	margin-right: -8px;
+  	overflow: hidden;
+}
+
+#divSlider {
+	overflow-x: hidden;
+}
+
+#imagem::-webkit-scrollbar, #divSlider::-webkit-scrollbar {
+	display: none;
+}
+
+#divSlider, #imagem {
+	max-height: 400px;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+
+@media screen and (min-width: 767px) {
+	#imagem {margin-left: 250px; transition: 0.4s; width: calc(100%);}
+}
+
+@media screen and (max-width: 766px) {
+	#imagem {margin-left: -10px; transition: 0.4s;}
+}
+
+/* Descrição Def */
+
+#imgDesc {
+	 width: 90%;
+  	height: 100px;
+  	background-color: #000000;
+  	overflow: scroll;
+  	border-radius: 10px;
+  	opacity: 0.8;
+  	margin-top: -100px;
+}
+
+#imgDesc::-webkit-scrollbar {
+	display: none;
+}
+
+@media screen and (min-width: 767px) {
+	#imgDesc {margin-left: 250px; transition: 0.4s; width: calc(100% - 250px);}
+	#descText {font-size: 18px; transition: 0.4s;}
+}
+
+@media screen and (max-width: 766px) {
+	#imgDesc {transition: 0.4s; width: 100%;}
+	#descText {font-size: 15px; transition: 0.4s;}
+}
+
+#descTitle {
+	color: #ffffff;
+	font-size: 25px;
+	margin-left: 5px;
+	margin-top: 5px;
+}
+
+#descText {
+	color: #ffffff;
+	font-size: 13px;
+	margin-left: 5px;
+	margin-bottom: 5px;
+	margin-right: 5px;
+}
+
+
+/* Botoes Def */
+
+#divBtn {
+  width: 90%;
+  	max-width: 100%;
+  	background-color: #000000;
+  	margin-right: -8px;
+  	overflow: scroll;
+  	margin-top: -10px;
+  	border-bottom-left-radius: 10px;
+  	border-bottom-right-radius: 10px;
+  	display: inline-block;
+}
+
+#divBtn::-webkit-scrollbar {
+	display: none;
+}
+
+#divBtn {
+	max-height: 200px !important;
+}
+
+@media screen and (min-width: 767px) {
+	#divBtn {margin-left: 250px; transition: 0.4s; width: calc(100% - 250px);}
+	#btnEsquerda, #btnDireita {margin: 5px 20%; transition: 0.4s;}
+}
+
+@media screen and (max-width: 766px) {
+	#divBtn {transition: 0.4s; width: 100%;}
+	#btnDireita {margin: 5px 20%; transition: 0.4s;}
+}
+
+#btnEsquerda, #btnDireita {
+	background-color: transparent;
+	outline: none;
+	border: none;
+	font-size: 20px;
+	margin: 5px 0;
+}
+
+#divBtnEsquerda, #divBtnDireita {
+	background-color: black;
+	width: 10%;
+}
+
+#divBtnDireita {
+ margin-top: -67px;
+ margin-left: 20%;
+}
+
+#divBtnEsquerda {
+  margin-right: 20%;
+}
+
+
+
+
+

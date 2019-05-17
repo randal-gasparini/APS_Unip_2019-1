@@ -1,0 +1,25 @@
+.titulo {
+  font-size: 40px;
+  color: #000000;
+}
+
+@media screen and (min-width: 768px){
+  .titulo {font-size: 25px; transition: 0.4s;}
+}
+
+@media screen and (max-width: 767px){
+  .titulo {font-size: 40px; transition: 0.4s;}
+}
+
+.subtitulo {
+  font-size: 20px;
+  color: gray;
+}
+
+@media screen and (min-width: 768px){
+  .subtitulo {font-size: 18px; transition: 0.4s;}
+}
+
+@media screen and (max-width: 767px){
+  .subtitulo {font-size: 20px; transition: 0.4s;}
+}

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="img/ico.ico" >
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/slider.css">
+    <link rel="stylesheet" type="text/css" href="css/txtDef.css">
+    <script src="js/sideMenu.js"></script>
+    <script src="js/slider.js"></script>
+    <title>Eolix | Início</title>
+
+  </head>
+
+  <body>
+
+    <div id="mySidenav" class="sidenav" value="">
+      <a href="index.html">Início</a>
+       <a href="funcionamento.html">Funcionamento</a>
+      <a href="historia.html">História</a>
+      <a href="brasil.html">Desenvolvimento no Brasil</a>
+      <a href="contato.html">Contato</a>
+     
+    </div>
+
+    <div id="myNav" class="nav">
+      <br><br>
+      <a href="index.html">Início</a>
+      <a href="funcionamento.html">Funcionamento</a>
+      <a href="historia.html">História</a>
+      <a href="brasil.html">Desenvolvimento no Brasil</a>
+      <a href="contato.html">Contato</a>
+      
+    </div>
+
+    <div id="divMenu" value="fechado">
+
+      <div id="divLogoMenu" align="left">
+        
+        <a href="index.html"><img src="img/logo.png" align="left" style="cursor: pointer; margin-top: -10px; transition: 1s;" width="100px" height="50px;"></a>
+
+      </div>
+
+      <div id="divOpnMenu" align="right">
+
+        <a id="aBtnMenu" onclick="menuFunction(aBtnMenu);"><span style="cursor:pointer; font-size: 26px;">
+          <div id="btnMenu" class="container">
+            <div class="barra1"></div>
+            <div class="barra2"></div>
+            <div class="barra3"></div>
+          </div>
+          </span></a>
+
+      </div>
+
+    </div>
+
+    <br><br>
+
+    <input style="top: 0; opacity: 0;" type="" name="" id="getImagem" value="1">
+    
+     <div id="divSlider" align="left">
+
+       <img align="center" id="imagem" src="img/imgSlider1.jpeg">
+
+      <div id="imgDesc">
+
+        <label id="descTitle">Parque Eólico Marítimo</label>
+        <p id="descText">O maior parque eólico marítimo foi inaugurado por uma empresa dinamarquesa chamada Orsted, atualmente o parque tem um complexo de 87 turbinas.</p>
+
+      </div>
+
+      <div id="divBtn" align="center">
+
+      <div id="divBtnEsquerda" align="left" onclick="mudarImagem(-1);"><button id="btnEsquerda" onclick="mudarImagem(-1);"><label style="color: #ffffff; font-size: 40px;">&#10094;</label></button></div>
+
+      <div id="divBtnDireita" align="right" onclick="mudarImagem(1);"><button id="btnDireita" onclick="mudarImagem(1);"><label style="color: #ffffff; font-size: 40px;">&#10095;</label></button></div>
+      
+      </div>
+      
+      </div>
+      
+      <div id="main" onclick="closeSideNav(aBtnMenu);">
+
+      <label class="titulo" id="titulo1"><strong>Energia Eólica</strong></label><br>
+      <label class="subtitulo" id="subtitulo1"><strong>O que é</strong></label>
+      
+      <p class="texto">
+
+      Também chamada de energia dos ventos, a energia eólica é a energia cinética contida nas massas de ar, vento, que tem condições de ser aproveitada e utilizada na geração de energia elétrica, por meio da indução eletromagnética, e para trabalhos mecânicos como bombeamento de água e trituração de grãos. O processo para aproveitamento da energia eólica depende dos aerogeradores, que são os equipamentos utilizados para, a partir do contato com o vento, rotacionarem e gerarem outras formas de energia, como a elétrica por exemplo.
+
+      </p>
+      
+      <br><br>
+      
+      <label class="subtitulo" id="subtitulo2"><strong>História</strong></label><br>
+      
+      <p class="texto">
+      
+      O primeiro registro histórico da utilização da energia eólica para bombeamento de água e moagem de grãos através de cata-ventos é proveniente da Pérsia, por volta de 200 A.C. Esse tipo de moinho de eixo vertical veio a se espalhar pelo mundo islâmico sendo utilizado por vários séculos.
+      <a href="historia.html" class="link" style="color: blue;"><u> Continuar com a História.</u></a>
+      
+      </p>
+      
+      <label class="titulo" id="titulo2"><strong>Quem somos</strong></label>
+      <p class="texto">
+      
+      Somos alunos da Universidade Paulista, desenvolvemos este site para a disciplina conhecida como APS (Atividade Prática Supervisionada).
+Este site tem como objetivo conscientizar seus usuários sobre o tema sustentabilidade e para isso resolvemos destacar a importância das energias sustentáveis, o nosso tema é a Energia Eólica. 
+Apresentaremos o conteúdo, de forma a apresentar o contexto histórico, o método de funcionamento, tipos de aerogeradores, acidentes e algumas curiosidades, e se você tiverem alguma dúvida ou ideia <a href="contato.html" class="link" style="color: blue;">entre em contato conosco.</a>
+      
+      <br><br><br><br>
+    </div>
+         
+    <div id="footer">
+      <span>Eolix&copy; Todos os direitos reservados para a APS</span>
+    </div>
+     
+  </body>
+
+</html> 

@@ -1,0 +1,176 @@
+/*Deixar bordas maiores se a tela > 767px de largura*/
+@media screen and (min-width: 767px) {
+	#divForm {margin-top: 20px; margin-left: 20px;}
+}
+
+/* INPUT CONFIG INICIO */
+
+/*Deixar os inputs e botao sem bordas pré-definidas*/
+input {
+  outline: none;
+  border: none;
+}
+
+textarea {
+  outline: none;
+  border: none;
+}
+
+/* Obs: Não fazer alteracoes no código abaixo */
+/* ANIMACAO INICIO */
+
+.focus-input-1::before,
+.focus-input-2::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 0;
+  height: 1px;
+  background-color: #777777;
+}
+
+.focus-input-1::before {
+  top: -1px;
+  left: 0;
+}
+
+.focus-input-2::before {
+  bottom: -1px;
+  right: 0;
+}
+
+.focus-input-1::after,
+.focus-input-2::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 1px;
+  height: 0;
+  background-color: #777777;
+}
+
+.focus-input-1::after {
+  top: 0;
+  right: -1px;
+}
+
+.focus-input-2::after {
+  bottom: 0;
+  left: -1px;
+}
+
+/*Movimento da linha verde(parte de cima)*/
+.input:focus + .focus-input-1::before {
+  -webkit-animation: full-w 0.2s linear 0s;
+  animation: full-w 0.2s linear 0s;
+  animation-fill-mode: both;
+  -webkit-animation-fill-mode: both;
+}
+
+/*Movimento da linha verde(parte do lado direito)*/
+.input:focus + .focus-input-1::after {
+  -webkit-animation: full-h 0.1s linear 0.2s;
+  animation: full-h 0.1s linear 0.2s;
+  animation-fill-mode: both;
+  -webkit-animation-fill-mode: both;
+}
+
+/*Movimento da linha verde(parte de baixo)*/
+.input:focus + .focus-input-1 + .focus-input-2::before {
+  -webkit-animation: full-w 0.2s linear 0.3s;
+  animation: full-w 0.2s linear 0.3s;
+  animation-fill-mode: both;
+  -webkit-animation-fill-mode: both;
+}
+
+/*Movimento da linha verde(parte do lado esquerdo)*/
+.input:focus + .focus-input-1 + .focus-input-2::after {
+  -webkit-animation: full-h 0.1s linear 0.5s;
+  animation: full-h 0.1s linear 0.5s;
+  animation-fill-mode: both;
+  -webkit-animation-fill-mode: both;
+}
+
+/*Executar a animação*/
+@keyframes full-w {
+  to {
+    width: calc(100% + 1px);
+  }
+}
+
+@keyframes full-h {
+  to {
+    height: calc(100% + 1px);
+  }
+}
+
+/* ANIMACAO FIM */
+
+/*Borda dos inputs*/
+.borda {
+  width: 100%;
+  position: relative;
+  background-color: #fff;
+  border: 1px solid #e6e6e6;/*Cor da borda*/
+  margin-bottom: 17px;
+}
+
+/*Texto dos inputs*/
+.input {
+  display: block;
+  width: 90%;
+  background: transparent;
+  font-family: "Tahoma";
+  font-size: 15px;
+  color: #1b3815;
+  line-height: 1.2;
+}
+
+/*Espaçamento dos inputs*/
+input.input {
+  height: 62px;
+  padding: 0 20px 0 23px;
+}
+
+/*Espaçamento dos textos dos inputs*/
+textarea.input {
+  min-height: 199px;
+  padding: 19px 20px 0 23px;
+}
+
+/* INPUT CONFIG FIM */
+
+/* BOTAO INICIO */
+
+button {
+  outline: none !important;
+  border: none;
+  background: transparent;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.btnEnviar {
+  align-items: center;
+  padding: 0 20px;
+  min-width: 160px;
+  height: 42px;
+  background-color: #535557;
+
+  font-family: "Tahoma";
+  font-size: 14px;
+  color: #fff;
+  text-transform: uppercase;
+  padding-top: 5px;
+
+  transition: all 0.4s;
+}
+
+/*Mudar cor de fundo do botao*/
+.btnEnviar:hover {
+  background-color: #777777;
+}
+
+/* BOTAO FIM */

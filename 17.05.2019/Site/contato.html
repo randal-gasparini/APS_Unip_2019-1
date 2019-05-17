@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/form.css">
+    <link rel="stylesheet" type="text/css" href="css/txtDef.css">
+    <script src="js/sideMenu.js"></script>
+    <title>Eolix | Contato</title>
+
+  </head>
+
+  <body>
+
+    <div id="mySidenav" class="sidenav" value="">
+     <a href="index.html">Início</a>
+       <a href="funcionamento.html">Funcionamento</a>
+      <a href="historia.html">História</a>
+      <a href="brasil.html">Desenvolvimento no Brasil</a>
+      <a href="contato.html">Contato</a>
+    </div>
+    <div id="myNav" class="nav">
+      <br><br>
+     <a href="index.html">Início</a>
+       <a href="funcionamento.html">Funcionamento</a>
+      <a href="historia.html">História</a>
+      <a href="brasil.html">Desenvolvimento no Brasil</a>
+      <a href="contato.html">Contato</a>
+    </div>
+
+    <div id="divMenu" value="fechado">
+
+      <div id="divLogoMenu" align="left">
+        
+        <a href="index.html"><img src="img/logo.png" align="left" style="cursor: pointer; margin-top: -10px;" width="100px" height="50px;"></a>
+
+      </div>
+
+      <div id="divOpnMenu" align="right">
+
+        <a id="aBtnMenu" onclick="menuFunction(aBtnMenu);"><span style="cursor:pointer; font-size: 26px;">
+          <div id="btnMenu" class="container">
+            <div class="barra1"></div>
+            <div class="barra2"></div>
+            <div class="barra3"></div>
+          </div>
+          </span></a>
+
+      </div>
+
+    </div>
+
+    <div id="main" onclick="closeSideNav(aBtnMenu);">
+
+      <br><br><br>
+    
+      <label class="titulo" id="titulo2"><strong>Quem somos</strong></label>
+      <p class="texto">
+      
+      Somos alunos da Universidade Paulista, desenvolvemos este site para a disciplina conhecida como APS (Atividade Prática Supervisionada).
+Este site tem como objetivo conscientizar seus usuários sobre o tema sustentabilidade e para isso resolvemos destacar a importância das energias sustentáveis, o nosso tema é a Energia Eólica. 
+Apresentaremos o conteúdo, de forma a apresentar o contexto histórico, o método de funcionamento, tipos de aerogeradores, acidentes e algumas curiosidades, e se você tiverem alguma dúvida ou ideia entre em contato conosco.
+      
+      </p>
+      
+      <br><br>
+        
+      <div id="divForm">
+        <form autocomplete="off" method="post">
+          <span style="font-size: 24px;">Entre em contato</span><br><br>
+
+          <div class="borda">
+            <input class="input" type="text" required="true" name="name" placeholder="Nome Completo">
+            <span class="focus-input-1"></span>
+            <span class="focus-input-2"></span>
+          </div>
+
+          <div class="borda">
+            <input class="input" type="email" required="true" name="email" placeholder="Email">
+            <span class="focus-input-1"></span>
+            <span class="focus-input-2"></span>
+          </div>
+
+          <div class="borda">
+            <textarea required="true" class="input" name="message" placeholder="Deixe uma mensagem"></textarea>
+            <span class="focus-input-1"></span>
+            <span class="focus-input-2"></span>
+          </div>
+
+          <div>
+            <button class="btnEnviar">Enviar Email</button>
+          </div>
+
+        </form>
+      </div>
+
+      <br><br><br><br>
+    </div>
+         
+    <div id="footer">
+      <span>Eolix&copy; Todos os direitos reservados para a APS</span>
+    </div>
+     
+  </body>
+
+</html> 
