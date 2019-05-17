@@ -1,0 +1,135 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="Estilo.css">
+    <link rel="stylesheet" href="dropdownHover.css">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Contatos</title>
+</head>
+
+<body>
+    <div id="carouselCaptions" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselCaptions" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselCaptions" data-slide-to="1"></li>
+            <li data-target="#carouselCaptions" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="imagens/intro.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="imagens/intro2.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="imagens/intro3.png" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselCaptions" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselCaptions" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+    <nav id="menu">
+        <ul>
+            <li><a href="Home.html">Home</a></li>
+            <div class="dropdownElement">
+                <button class="dropbtn">ONG </button>
+                <div class="dropdownContent">
+                    <a href="Sobre.html">Sobre</a>
+                    <a href="Contatos.html">Contatos</a>
+                    <a href="FacaParte.html">Faça Parte</a>
+                </div>
+            </div>
+            <div class="dropdownElement">
+                <button class="dropbtn">O Plástico</button>
+                <div class="dropdownContent">
+                    <a href="DescarteInadequado.html">Efeitos do Descarte Inadequado</a>
+                    <a href="ComoDescartar.html">Como Descatar corretamente</a>
+                </div>
+            </div>
+            <li><a href="Noticias.html">Notícias</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="fonteTexto">
+            <h1>Contato</h1>
+        </div>
+        <div id="formDiv" class=" container">
+            <form action="" method="get">
+                <div>
+                    <label for="nome">Nome:</label>
+                     <input type="text" name="nome" required>
+                </div>
+                <div>
+                    <label for="idade">Idade:</label> 
+                    <input type="number" name="idade"  max="110" min="0" step="1">
+                </div>
+                <div>
+                    <label for="sexo">Sexo:</label> <br>
+                    
+                    <label> 
+                        Feminino:
+                        <input type="radio" name="sexo" value="F" checked>
+                    </label>
+                    
+                    <label> 
+                        Masculino: 
+                        <input type="radio" name="sexo" value="M"  checked>
+                    </label>
+                </div>
+                <div>
+                    <label for="email"> E-mail:</label> 
+                    <input type="email" name="email" required  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2-3,}$">
+                </div>
+
+                <div>
+                    <label> Deseja Receber Emails? </label>
+                    
+                    <select>
+                        <option value="s">Sim</option>
+                        <option value="n">Não</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="contato">Motivo do Contato:</label>
+                    <label> Administrativo <input type="checkbox" name="contato" value="adm"></label>
+                    <label>Financeiro <input type="checkbox" name="contato" value="fin"></label>
+                    <label>Doação <input type="checkbox" name="contato" value="doacao"></label>
+                    <label>Solicitação de material <input type="checkbox" name="contato" value="mat"></label>
+                </div>
+
+                <div> 
+                    <label> Digite sua menssagem:</label>  <textarea name="message" rows="10" cols="40"></textarea>
+                </div>
+
+                <div> 
+                    <button class="button" type="submit" name="submit">Enviar</button>
+                    <button class="button" type="reset" name="reset">Reset</button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="MyScript.js"></script>
+</body>
+
+</html>

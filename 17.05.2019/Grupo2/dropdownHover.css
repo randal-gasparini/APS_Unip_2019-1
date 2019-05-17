@@ -1,0 +1,41 @@
+/* Botão Dropdown  */
+.dropbtn {
+  background-color: #009;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+/* <div> - posciona a div do dropdown */
+.dropdownElement {
+  position: relative;
+  display: inline-block;
+}
+
+/* conteudo do dropdown */
+.dropdownContent {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links dentro do dropdown */
+.dropdownContent a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* muda a cor dos links do dropdon quando ocorrer hover */
+.dropdownContent a:hover {background-color: #ddd;}
+
+/* mostra o conteudo do dropdown quando ocorrer hover */
+.dropdownElement:hover .dropdownContent {display: block;}
+
+/* Muda a cor do botão do dropdown quando ocorrer hover */
+.dropdownElement:hover .dropbtn {background-color:  #09F;;}
