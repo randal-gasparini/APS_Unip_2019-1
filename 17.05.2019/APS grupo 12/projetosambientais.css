@@ -1,0 +1,40 @@
+body{
+	background: url("baleia.jpg") no-repeat center center fixed;
+	background-size: cover;
+	-background-size: cover; /* SAFARI / CHROME */
+	-moz-background-size: cover; /* FIREFOX */
+	-ms-background-size: cover; /* IE */
+	-o-background-size: cover; /* OPERA */
+	max-width: 800px; 
+	font-family: 'Libre Baskerville', serif;
+	margin: auto;
+	line-height: 1.5
+}
+main{
+ 	background-color: #76d46e75;
+    margin-top: 20px;
+    padding: 5px 5px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+#plantas{
+	background-color: green;
+	text-align: left;
+}
+#animais{
+	background-color: green;
+	text-align: left;
+}
+#formulario{
+	background-color: green;
+	text-align: left;
+}
+.logo{
+	text-align: center;
+}
+.titulo{
+	text-align: center;
+}
+.video{
+	text-align: center;
+}
