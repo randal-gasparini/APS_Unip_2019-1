@@ -1,0 +1,133 @@
+body 
+{
+text-align: left;
+font-family: sans-serif;
+background-color:#9BCD9B;
+background-image: url(pc.png);
+background-repeat: no-repeat;
+background-size: 200%;
+background-attachment: fixed;
+}
+
+
+#bodyimg
+{
+opacity: 1.0;
+background-size:100;
+}
+
+#logo 
+{
+align-self: left
+border-style: none;
+clear: both;
+}
+
+#nomesite
+{
+color:#283823;
+text-align: left;
+font-size: 30px;
+position: relative;
+left: 20px;
+top: 25px;	
+}
+
+#page
+{
+background-size:700%;
+background-repeat: no-repeat;
+background-image: url(degradê2.jfif);
+margin: auto;
+padding-top:20px;
+padding-bottom:20px;
+padding-right:20px; 
+padding-left:20px;
+position: center; 
+background-color:#EEE0E5; 
+width:1000px;
+}
+
+#header
+{
+margin-left:20px;
+padding-top:20px;
+padding-bottom: 20px;
+color:#283823;
+text-align:left;
+font-size:16px;
+font-weight:bold;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+#bar 
+{ 
+font-weight:bold;
+margin-left:60px;
+margin-right:60px;
+padding-top: 5px;
+padding-bottom: 5px;
+}
+
+#bar a
+{
+font-size:16px;
+font-weight:bold;
+color:#7AC5CD;
+margin-left:60px;
+margin-right:60px;
+}
+
+#contentTitle h1
+{
+text-align: left;
+margin-left:20px;
+padding-top:20px;
+padding-bottom: 20px;
+font-size:30px;
+font-weight:bold;
+color:#283823;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+#content
+{
+margin margin-right: 20px;
+margin-left:20px; 
+padding-bottom:20px; 
+font-size:16px;
+color:#030712;
+line-height:20px;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+
+#h1
+{
+color:#283823;
+}
+
+#backtop a
+{
+color:#7AC5CD;
+text-align:left;
+font-size:16px;
+font-weight:bold;
+font-family:Arial, Helvetica, sans-serif;
+margin-left:20px;
+}
+
+#backtop
+{
+padding-bottom: 20px;
+}
+
+#footer 
+{
+padding-top:5px; 
+width:auto;
+font-size:16px;
+color:#030712;
+font-weight:bold;
+text-align: center;
+}
